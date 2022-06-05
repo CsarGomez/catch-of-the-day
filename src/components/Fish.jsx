@@ -9,12 +9,12 @@ const Fish = ({ details, addToOrder, index }) => {
       <div className='w-full'>
         <h3 className='flex items-center justify-between'>
           {details.name}
-          <span className='text-[14px]'>{formatPrice(details.price)}</span>
+          <span className='text-[16px]'>{formatPrice(details.price)}</span>
         </h3>
-        <p className='text-[12px]'>{details.desc}</p>
+        <p>{details.desc}</p>
         <button
           disabled={!isAvailable}
-          className='border-[1px] border-black hover:bg-black hover:text-white p-[0.5rem] mt-[1rem] text-[12px] disabled:border-2 disabled:border-[#d12028] disabled:text-[#d12028] disabled:-rotate-[10deg] disabled:scale-150 disabled:translate-x-2/4 disabled:-translate-y-[100%] disabled:bg-white disabled:cursor-none'
+          className='border-[1px] border-black hover:bg-black hover:text-white px-[0.5rem] mt-[1rem] text-[22px] disabled:border-2 disabled:border-[#d12028] disabled:text-[#d12028] disabled:-rotate-[10deg] disabled:scale-150 disabled:translate-x-2/4 disabled:-translate-y-[100%] disabled:bg-white disabled:cursor-none'
           onClick={() => addToOrder(index)}
         >
           {isAvailable ? 'ADD TO ORDER' : 'SOLD OUT!'}
