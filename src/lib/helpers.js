@@ -13,3 +13,7 @@ export function formatPrice(cents) {
 export function validStore(store) {
   if (store === '' || store === 'default') return `is not a valid store`;
 }
+
+export function getID() {
+  return Date.now();
+}
