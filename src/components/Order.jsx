@@ -40,15 +40,17 @@ const Order = ({ fishes, order }) => {
             return (
               <li
                 key={key}
-                className='text-[14px] border-b-2 border-black m-[1rem] p-[1rem]'
+                className='border-b-2 border-black m-[1rem] p-[1rem] flex justify-between'
               >
-                {count} lbs {fish.name}
+                <p>
+                  {count} lbs {fish.name}
+                </p>
                 {formatPrice(count * fish.price)}
               </li>
             );
           })}
         </ul>
-        <div className='flex justify-between text-[18px] p-[1rem]'>
+        <div className='flex justify-between p-[1rem] text-[28px]'>
           <p>Total:</p>
           <p>{formatPrice(total)}</p>
         </div>

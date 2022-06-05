@@ -7,26 +7,34 @@
 
   /* import fonts from public > fonts using @font-face */
   @font-face {
-    font-family: "Lora";
+    font-family: "blanch";
     font-weight: 700;
     font-style: italic;
-    src: url('/fonts/lora-boldItalic.woff2') format('woff2'), url('/fonts/lora-boldItalic.woff') format('woff');
+    src: url('/fonts/blanch_caps_inline-webfont.woff') format('woff');
   }
   @font-face {
-    font-family: "Montserrat";
-    src: url('/fonts/montserrat-regular.woff2') format('woff2'), url('/fonts/montserrat-regular.woff') format('woff');
+    font-family: "haymaker";
+    src: url('/fonts/haymaker-webfont.woff') format('woff');
   }
   /* setting by default the fonts in html tags */
   html{
     font-size: 62.5%;
   }
   body{
-    font-family: "Montserrat", "Helvetica";
-    font-size: 1.6rem;
+    font-family: "blanch", "Helvetica";
+    font-size: 2.2rem;
   }
-  h2, h1{
-    font-family: "Lora";
-    font-size: 2.4rem;
+  h1, h2, h3{
+    font-family: "haymaker";
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+  h2{
+    font-size: 2.2rem
+  }
+  h3{
+  font-size: 1.8rem    
   }
   input#fold:not(:checked) ~ #main .catch-of-the-day > * {
     -webkit-transform: none;
